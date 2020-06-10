@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Tutorial {
 
@@ -19,7 +20,10 @@ public class Tutorial {
         for (int i = 0; i < estudiantes.size(); i++) {
             System.out.println(estudiantes.get(i)); 
         }
-            
+        Iterator<String> iter = estudiantes.iterator();
+        while (iter.hasNext()) {            
+            System.out.println(iter.next());
+        }
         }
     
 }
